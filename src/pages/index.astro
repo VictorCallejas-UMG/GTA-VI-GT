@@ -1,0 +1,884 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '@/layouts/Layout.astro';
+import herokeylogo from '@/assets/hero-key-logo.webp';
+import herokeybackground from '@/assets/hero-key-background.webp';
+import LogoVIicon from '@/assets/logo-vi.svg';
+import PlayButtonicon from '@/assets/play-button.svg';
+import Logocortoicon from '@/assets/logo-cutted.svg';
+import Full_logo from '@/assets/full-logo.webp';
+import Ps5_logo from '@/assets/ps5.svg';
+import Xbox_logo from '@/assets/xbox.svg';
+import video_1 from '@/assets/videos/video1.mp4';
+import jason1 from '@/assets/img/Jason1.webp';
+import jason2 from '@/assets/img/Jason2.webp';
+import jason3 from '@/assets/img/Jason3.webp';
+import video2 from '@/assets/videos/video2.mp4';
+import jason4 from '@/assets/img/Jason4.webp';
+import jason5 from '@/assets/img/Jason5.webp';
+import jason6 from '@/assets/img/Jason6.webp';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+    <div id="logo-mask" class="fixed top-0 w-full h-screen">
+        <section>
+            <picture
+            id="hero-key"
+            class="h-screen scale-125 block overflow-hidden fixed"
+            >
+                <img
+                    id="hero-key-logo"
+                    src={herokeylogo.src}
+                    class="absolute w-full h-full object-cover"
+                />
+                <img
+                    id="hero-key-background"
+                    src={herokeybackground.src}
+                    class="w-full h-full object-cover"
+                />
+            </picture>
+        </section>
+    </div>
+
+ <picture>
+
+
+             <div id="hero-full-container">
+    <img
+        id="hero-full"
+        src={Full_logo.src}
+    />
+            </div>
+
+
+
+
+
+            </picture>
+
+    <div
+        class="fixed flex flex-col items-center justify-between h-screen px-20 py-16 w-full"
+    >
+       
+
+        <button class="inset-0 m-auto cursor-pointer inline-block">
+            <PlayButtonicon id="hero-play-button" class="text-white m-auto size-21 mt-10 backdrop-blur-3xl rounded-full hover:scale-110 transition-transform duration-300"/>
+        </button>
+
+        <footer id="hero-footer" class="absolute bottom-8 m-auto">
+            <Logocortoicon class="text-white w-38 drop-shadow-[0_0_2px_rgba(255,255,255,.5),0_0_8px_#000] "/>
+            <span 
+                class="absolute uppercase tracking-[6px] whitespace-nowrap text-center top-[49px] font-medium text-shadow-[0_0_2px_rgba(255,255,255,.5),0_0_8px_#000] left-1/2 -translate-x-1/2 text-lg"
+                >
+                    Ver el trailer 2
+                </span>
+        </footer>
+
+    </div>
+
+<header class="fixed top-8 left-20 z-[100]">
+    <LogoVIicon class="size-10 text-white hover:text-yellow-100 transition-colors duration-500 cursor-pointer" />
+</header>
+
+<div id="release-date" class="fixed inset-0 z-20 flex flex-col items-center justify-center opacity-0">
+
+  <span class="release-small">
+    DISPONIBLE
+  </span>
+
+  <span class="release-big">
+    EL 19 DE NOVIEMBRE
+  </span>
+
+  <span class="release-big">
+    DE 2026
+  </span>
+
+  <div id="log_games">
+      <img 
+          src={Ps5_logo.src}
+          class="console-logo"
+      />
+
+      <img 
+          src={Xbox_logo.src}
+          class="console-logo"
+      />
+  </div>
+
+</div>
+
+
+
+
+
+
+<div id="story-text">
+
+    <span class="story-title">
+        Vice City, EE. UU.
+    </span>
+
+    <span class="story-description">
+        Jason y Lucia siempre han sabido que las cartas estaban en su contra,
+        pero cuando un golpe que parecía fácil sale mal, se ven atrapados en
+        el lado más oscuro del lugar más soleado de América, en medio de una
+        conspiración criminal que se extiende por todo el estado de Leonida,
+        y obligados a depender más que nunca el uno del otro si quieren salir con vida.
+    </span>
+    
+    
+</div>
+
+
+<div id="video-1-container">
+    <video
+        id="video-1"
+        src={video_1}
+        muted
+        playsinline
+        preload="auto"
+    ></video>
+</div>
+
+
+
+<div id="jason-text">
+    <span class="jason-title">Jason Duval</span>
+    <span class="jason-subtitle">Jason quiere una vida fácil, 
+        pero las cosas 
+        no hacen más que 
+        complicarse.</span>
+    <span class="jason-description">
+        Jason se crio rodeado de estafadores y delincuentes. Tras un tiempo en el ejército 
+        intentando dejar atrás su adolescencia problemática, acabó en los cayos haciendo lo 
+        que mejor sabe: trabajar para narcotraficantes de la zona. Quizás haya llegado el 
+        momento de probar algo nuevo.
+    </span>
+</div>
+
+<div id="jason-gallery">
+
+    <div id="jason-image">
+        <img src={jason1.src} alt="Jason Duval" />
+    </div>
+
+    <div id="jason-image-2">
+        <img src={jason2.src} alt="Jason Duval 2" />
+    </div>
+
+</div>
+
+<div id="jason-left">
+    <div id="jason-image-3">
+        <img src={jason3.src} alt="Jason Duval 3" />
+    </div>
+</div>
+
+
+<div id="video-2-container">
+    <video
+        id="video-2"
+        src={video2}
+        muted
+        playsinline
+        preload="auto"
+    ></video>
+</div>
+
+<div id="jason-story-2">
+
+    <div id="jason-story-2-left">
+
+        <span class="jason-story-2-title">
+            «Pase lo que pase, puedes contar conmigo.»
+        </span>
+
+        <span class="jason-story-2-subtitle">
+            Otro día en el paraíso, ¿eh?
+        </span>
+
+        <div id="jason-story-2-gallery">
+
+            <div id="jason4-image">
+                <img src={jason4.src} alt="Jason 5" />
+            </div>
+
+            <div id="jason5-image">
+                <img src={jason5.src} alt="Jason 6" />
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="jason-story-2-right">
+
+        <span class="jason-story-2-description">
+            Conocer a Lucia podría ser lo mejor o lo peor que le haya pasado.
+            Jason tiene claro cómo le gustaría que acabara la historia,
+            pero ahora mismo es difícil saberlo.
+        </span>
+
+        <div id="jason6-image">
+            <img src={jason6.src} alt="Jason 7" />
+        </div>
+
+    </div>
+
+</div>
+
+<div id="main-spacer"></div>
+
+</Layout>
+
+<style>
+   #logo-mask {
+    background: white;
+    mask-image: url("/logo-stack.svg");
+    mask-position: center 25%;
+    mask-repeat: no-repeat;
+    mask-size: clamp(37000vh, 2500%, 0vh);
+    z-index: 0;
+}
+
+#hero-full-container {
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+#hero-full {
+    width: min(28vw, 30vh);
+    height: auto;
+
+    opacity: 0;
+
+    transform: translateY(-20vh);
+}
+
+#release-date {
+    pointer-events: none;
+}
+
+.release-small {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+
+    background: linear-gradient(
+        to right,
+        #ff4d6d,
+        #ff8a65,
+        #ffd166
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.release-big {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 0.95;
+
+    background: linear-gradient(
+        to right,
+        #ff4d6d,
+        #ff8a65,
+        #ffd166
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#release-date {
+    width: 100%;
+    padding-inline: 1rem;
+
+    text-align: center;
+
+    pointer-events: none;
+
+    transform: translateY(12vh);
+
+    filter: hue-rotate(-90deg);
+}
+
+.release-small {
+    font-size: clamp(1.8rem, 4vw, 6rem);
+    font-weight: 800;
+    line-height: 1;
+
+    background: linear-gradient(
+        to right,
+        #ff4d6d,
+        #ff8a65,
+        #ffd166
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.release-big {
+    font-size: clamp(2rem, 5vw, 6rem);
+    font-weight: 900;
+    line-height: 0.95;
+
+    background: linear-gradient(
+        to right,
+        #ff4d6d,
+        #ff8a65,
+        #ffd166
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#log_games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   gap: clamp(0.8rem, 2vw, 2rem);
+
+  margin-top: clamp(1rem, 3vw, 2.5rem);
+}
+
+.console-logo {
+    height: clamp(22px, 3vw, 42px);
+    width: auto;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        invert(1);
+
+    opacity: 0.9;
+}
+
+.console-logo {
+    height: 25px;
+    width: auto;
+
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        invert(1);
+
+    opacity: 0.9;
+}
+
+#story-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90%, 820px);
+    padding-inline: 2rem;
+    text-align: left;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    scale: 1.12;
+}
+
+.story-title {
+    display: block;
+
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 900;
+
+    margin-bottom: 1.2rem;
+
+    background: linear-gradient(
+        to right,
+        #ff4d6d,
+        #ff8a65,
+        #ffd166
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.story-description {
+    display: block;
+
+    font-size: clamp(1rem, 1.5vw, 1.45rem);
+    line-height: 1.65;
+    font-weight: 500;
+
+    background: linear-gradient(
+        to right,
+        #ff4d6d,
+        #ff8a65,
+        #ffd166
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#video-1-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background: black;
+    opacity: 0;
+    z-index: 10;
+}
+
+#video-1 {
+    position: absolute;
+    top: -42%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    min-height: 100vh;
+    min-width: 100vw;
+    height: auto;
+    width: auto;
+
+    object-fit: cover;
+    object-position: center top;
+}
+
+@media (orientation: landscape) and (max-aspect-ratio: 9/16) {
+    #video-1 {
+        height: auto;
+        width: 100vw;
+    }
+}
+
+#jason-text {
+    position: fixed;
+    left: 10%;
+    top: 18%;
+    width: 35%;
+    z-index: 11;
+
+    opacity: 1;
+
+    transform: translateY(140vh);
+}
+
+.jason-title {
+    display: block;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+    color: #ffe4a3;
+    -webkit-text-fill-color: #ffe4a3;
+}
+
+.jason-subtitle {
+    display: block;
+    font-size: clamp(2rem, 2.2vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+    color: #ffc0fa;
+    -webkit-text-fill-color: #ffc0fa;
+}
+
+.jason-description {
+    display: block;
+    font-size: clamp(2rem, 1.7vw, 3rem);
+    line-height: 1.8;
+    font-weight: 800;
+    color: white;
+    -webkit-text-fill-color: white;
+}
+
+
+
+
+#main-spacer {
+    height: 19000px;
+}
+
+
+#logo-mask {
+    pointer-events: none;
+}
+
+#jason-gallery {
+    position: fixed;
+
+    right: 4%;
+    top: 45%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4vh;
+
+    z-index: 11;
+
+    transform: translateY(140vh);
+}
+
+#jason-image,
+#jason-image-2,
+#jason-image-3 {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+#jason-image {
+    width: clamp(420px, 34vw, 760px);
+    aspect-ratio: 3 / 4;
+}
+
+#jason-image-2 {
+    width: clamp(360px, 26vw, 620px);
+    aspect-ratio: 1 / 1;
+}
+
+#jason-image-3 {
+    width: clamp(360px, 26vw, 620px);
+    aspect-ratio: 9 / 16;
+}
+
+#jason-image img,
+#jason-image-2 img,
+#jason-image-3 img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+#jason-image img {
+    object-position: 20% top;
+}
+
+#jason-image-2 img {
+    object-position: 20% top;
+}
+
+#jason-image-3 img {
+    object-position: 80% top;
+}
+
+#jason-left {
+    position: fixed;
+
+    left: 10%;
+    top: 270%;
+
+    z-index: 11;
+
+    transform: translateY(140vh);
+}
+
+#jason-image-3 {
+    width: clamp(360px, 26vw, 620px);
+    aspect-ratio: 9 / 16;
+
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+#jason-image-3 img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: 80% top;
+}
+
+#video-2-container {
+    position: fixed;
+    inset: 0;
+
+    overflow: hidden;
+
+    background: black;
+
+    opacity: 0;
+
+    z-index: 9;
+}
+
+#video-2 {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+
+    /* recorte para video vertical */
+    object-position: center 25%;
+}
+
+
+#jason-story-2 {
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-inline: 14%;
+    padding-top: 10vh;
+
+    z-index: 11;
+
+    transform: translateY(220vh);
+}
+
+#jason-story-2-left {
+    width: 42%;
+}
+
+#jason-story-2-right {
+    width: 34%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 50vh;
+}
+
+.jason-story-2-title {
+    display: block;
+
+    font-size: clamp(3rem, 5vw, 6rem);
+    line-height: 0.95;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    color: #ffe066;
+    -webkit-text-fill-color: #ffe066;
+
+    margin-bottom: 8.5rem;
+}
+
+.jason-story-2-subtitle {
+    display: block;
+
+    font-size: clamp(1.5rem, 2vw, 2.8rem);
+    font-weight: 700;
+    width: 50%;
+    color: #ff7ad9;
+    -webkit-text-fill-color: #ff7ad9;
+
+    margin-bottom: 3rem;
+}
+
+.jason-story-2-description {
+    display: block;
+
+    font-size: clamp(1.3rem, 1.5vw, 2rem);
+    line-height: 1.7;
+    font-weight: 800;
+
+    color: white;
+    -webkit-text-fill-color: white;
+}
+
+#jason-story-2-gallery {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+#jason4-image,
+#jason5-image,
+#jason6-image {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+#jason4-image {
+    width: clamp(360px, 28vw, 620px);
+    aspect-ratio: 1 / 1;
+}
+
+#jason5-image {
+    width: clamp(280px, 22vw, 480px);
+    aspect-ratio: 1 / 1;
+}
+
+#jason6-image {
+    width: clamp(320px, 24vw, 520px);
+    aspect-ratio: 9 / 16;
+}
+#jason5-image img {
+    object-position: 30% center;
+}
+
+#jason6-image img {
+    object-position: 20% center;
+}
+
+#jason4-image img,
+#jason5-image img,
+#jason6-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // @ts-nocheck
+import { gsap } from "gsap"
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
+const tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#main-spacer",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 2,
+    },
+})
+
+tl
+.to("#hero-key", { scale: 1, duration: 1 })
+.to("#hero-key-logo", { opacity: 0 }, "<")
+.to("#hero-footer", { opacity: 0 }, "<")
+.to("#hero-play-button", { opacity: 0 }, "<")
+.to("#logo-mask", { maskSize: "clamp(20vh, 25%, 30vh)" }, 0.05)
+.to("#hero-key", { opacity: 0, duration: 0.2 }, 0.4)
+.to("#hero-full", { opacity: 1, duration: 0.7 }, 0.6)
+.to("#release-date", { opacity: 1, duration: 0.7 }, 0.7)
+.to("#release-date", { filter: "hue-rotate(0deg)", duration: 0.7, ease: "power2.out" }, 0.7)
+.to("#release-date", { filter: "hue-rotate(35deg)", duration: 0.7, ease: "power2.out" }, 1.3)
+.to("#release-date", { opacity: 0, duration: 0.1, ease: "power2.inOut" }, 2.7)
+.to("#hero-full", { opacity: 0, duration: 0.8 }, 2.7)
+.to("#logo-mask", { maskSize: "clamp(0vh, 0%, 0vh)", opacity: 0, duration: 0.0 }, 1.2)
+.to("#story-text", { opacity: 1, scale: 1, y: -40, duration: 1.2, ease: "power3.out" }, 3.1)
+.to("#story-text", { opacity: 0, duration: 0.8, ease: "power2.inOut" }, 4.5)
+.to("#video-1-container", { opacity: 1, duration: 0.5, ease: "power2.out" }, 5.3)
+.to("#video-1-container", { opacity: 0, duration: 1.5, ease: "power2.inOut" }, 6)
+.to(
+    ["#jason-text", "#jason-gallery", "#jason-left"],
+    { y: "-460vh", duration: 4, ease: "none" },
+    7
+)
+.to("#video-2-container", { opacity: 1, duration: 0.5, ease: "power2.out" }, 11)
+.to("#video-2-container", { opacity: 0, duration: 1, ease: "power2.inOut" }, 15)
+.to(
+    "#jason-story-2",
+    {
+        y: "-420vh",
+        duration: 4,
+        ease: "none"
+    },
+    15.0000001
+)
+
+
+function createVideoScrubber(videoEl, tlStartTime, tlEndTime) {
+    let rafId = null
+    let lastSetTime = -1
+    let isReady = false
+
+    function scrub() {
+        rafId = null
+        if (!isReady) return
+
+        const st = tl.scrollTrigger
+        if (!st) return
+
+        const totalDuration = tl.duration()
+        const startProgress = tlStartTime / totalDuration
+        const endProgress   = tlEndTime   / totalDuration
+        const range         = endProgress - startProgress
+
+        const p = Math.max(0, Math.min(
+            (st.progress - startProgress) / range,
+            1
+        ))
+
+        const targetTime = p * videoEl.duration
+
+        if (Math.abs(targetTime - lastSetTime) > 0.03) {
+            videoEl.currentTime = targetTime
+            lastSetTime = targetTime
+        }
+    }
+
+    function requestScrub() {
+        if (rafId === null) {
+            rafId = requestAnimationFrame(scrub)
+        }
+    }
+
+    function init() {
+        if (!videoEl.duration || isNaN(videoEl.duration)) return
+        isReady = true
+        videoEl.pause()
+        gsap.ticker.add(requestScrub)
+    }
+
+    if (videoEl.readyState >= 1) {
+        init()
+    } else {
+        videoEl.addEventListener("loadedmetadata", init, { once: true })
+    }
+}
+
+window.addEventListener("load", () => {
+    const video1 = document.getElementById("video-1")
+    const video2 = document.getElementById("video-2")
+
+    if (video1 instanceof HTMLVideoElement) {
+        video1.muted       = true
+        video1.playsInline = true
+        video1.currentTime = 0
+        createVideoScrubber(video1, 5.3, tl.duration())
+    }
+
+    if (video2 instanceof HTMLVideoElement) {
+        video2.muted       = true
+        video2.playsInline = true
+        video2.currentTime = 0
+        createVideoScrubber(video2, 11, 15)
+    }
+})
+</script>
